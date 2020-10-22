@@ -1,10 +1,8 @@
-/**
-  *takeda
-  *v.1
-  */
-import java.security.*;
+
+import java.security.SecureRandom;
+
 public class Dice {
-	private final int face;
+	private int face;
 	public Dice()
 	{
 		SecureRandom randomf = new SecureRandom();

@@ -1,13 +1,14 @@
 
-class DiceGame
-{
-    public static void main(String[] args)
+public class DiceTest {
+	public static void main(String[] args)
     {
         boolean check = true;
         while(check)
         {
             Dice dice1 = new Dice();
             Dice dice2 = new Dice();
+			System.out.println("Dice1 is " + dice1.getFace());
+			System.out.println("Dice2 is " + dice2.getFace());
             int sum = dice1.getFace() + dice2.getFace();
             boolean winCheck = false;
             switch (sum)
@@ -34,7 +35,8 @@ class DiceGame
             }
 			if(check)
 			{
-				System.out.println("Again!");
+				System.out.println("Roll Again!");
+				System.out.println("");
 				dice1.reSetFace();
 				dice2.reSetFace();
 			}
