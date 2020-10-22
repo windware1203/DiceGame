@@ -32,6 +32,17 @@ class DiceGame
                 default:
                     break;
             }
+			if(check)
+			{
+				System.out.println("Again!");
+				dice1.reSetFace();
+				dice2.reSetFace();
+			}
+			else
+			{
+				if(winCheck)System.out.println("you win!");
+				else System.out.println("you win!");
+			}
         }
     }
 }
