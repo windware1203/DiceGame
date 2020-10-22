@@ -7,8 +7,13 @@ public class Dice {
 	private final int face;
 	public Dice()
 	{
-		SecureRandom random = new SecureRandom();
-		face = random.nextInt(6)+1;
+		SecureRandom randomf = new SecureRandom();
+		face = randomf.nextInt(6)+1;
+	}
+	public void reSetFace()
+	{
+		SecureRandom random_re = new SecureRandom();
+		face = (face + random_re.nextInt(6)+1)%6+1;
 	}
 	public String toString()
 	{
