@@ -1,5 +1,4 @@
 # DiceGame
-***
 <p>
 ## Owner
 <strong>Takeda Nana</strong>
