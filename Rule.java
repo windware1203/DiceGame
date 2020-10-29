@@ -1,12 +1,12 @@
 import java.util.*;
 public class Rule {
-		Dice dice1 = new Dice();
+	Dice dice1 = new Dice();
         Dice dice2 = new Dice();
-		System.out.println("Dice1 is " + dice1.getFace());
-		System.out.println("Dice2 is " + dice2.getFace());
-           private int sum = dice1.getFace() + dice2.getFace();
-           private boolean winCheck = false;
-           switch (sum)
+	System.out.println("Dice1 is " + dice1.getFace());
+	System.out.println("Dice2 is " + dice2.getFace());
+        private int sum = dice1.getFace() + dice2.getFace();
+        private boolean winCheck = false;
+        switch (sum)
            {
                case 7:
                    check = false;
